@@ -19,22 +19,23 @@
 </head>
 <body>
 
-  <h1>Simple Quiz</h1>
+  <h1>Кўиз авүт Попистанэ</h1>
 
   <form id="quiz-form">
     <div class="question">
       <p>1. Что столица Попистани¿</p>
       <label><input type="radio" name="q1" value="Новобург"> Новобург</label><br>
       <label><input type="radio" name="q1" value="Сита да Смаꚜрагдска"> Сита да Смаꚜрагдска</label><br>
-      <label><input type="radio" name="q1" value="Мап"> Мап</label>
+      <label><input type="radio" name="q1" value="Мап"> Мап</label><br>
       <label><input type="radio" name="q1" value="Гараш Хинкал"> Гараш Хинкал</label>
     </div>
 
     <div class="question">
-      <p>2. Which planet is known as the Red Planet?</p>
-      <label><input type="radio" name="q2" value="Mars"> Mars</label><br>
-      <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label><br>
-      <label><input type="radio" name="q2" value="Venus"> Venus</label>
+      <p>2. Что ыкивый штат Попистани¿</p>
+      <label><input type="radio" name="q2" value="Кокэлистан"> Кокэлистан</label><br>
+      <label><input type="radio" name="q2" value="Сикэлостан"> Сикэлостан</label><br>
+      <label><input type="radio" name="q2" value="Чаўакия"> Чаўакия</label><br>
+      <label><input type="radio" name="q2" value"Смарагдын"> Смарагдын</label>
     </div>
 
     <button type="button" onclick="checkAnswers()">Submit</button>
@@ -45,8 +46,8 @@
   <script>
     function checkAnswers() {
       const answers = {
-        q1: "Paris",
-        q2: "Mars"
+        q1: "Новобург",
+        q2: "Сикэлостан"
       };
 
       let score = 0;
