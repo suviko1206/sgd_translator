@@ -43,7 +43,7 @@
       <label><input type="radio" name="q3" value="Мэсаж Лэзбянмор"> Мэсаж Лэзбянмор</label><br>
       <label><input type="radio" name="q3" value="Паўл-Алфрэд Ӕфсингэр"> Паўл-Алфрэд Ӕфсингэр</label><br>
       <label><input type="radio" name="q3" value="Дметр Арлащов"> Дметр Арлащов</label><br>
-      <label><input type="radio" name="q3" value"Леонид Асгард"> Леонид Асгард</label>
+      <label><input type="radio" name="q3" value="Леонид Асгард"> Леонид Асгард</label>
     </div>
 
     <button type="button" onclick="checkAnswers()">Сюж</button>
@@ -67,7 +67,7 @@
         }
       }
 
-      document.getElementById("result").textContent = `Цибе ${score} йыпие воцы`;
+      document.getElementById("result").textContent = `Цибе ${score} щ ${Object.keys(answers).length} йыпие воцы`;
     }
   </script>
 
