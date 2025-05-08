@@ -38,6 +38,14 @@
       <label><input type="radio" name="q2" value"Смарагдын"> Смарагдын</label>
     </div>
 
+    <div class="question">
+      <p>3. Уюм цыкий прэзидэнт Попистани¿</p>
+      <label><input type="radio" name="q3" value="Мэсаж Лэзбянмор"> Мэсаж Лэзбянмор</label><br>
+      <label><input type="radio" name="q3" value="Паўл-Алфрэд Ӕфсингэр"> Паўл-Алфрэд Ӕфсингэр</label><br>
+      <label><input type="radio" name="q3" value="Дметр Арлащов"> Дметр Арлащов</label><br>
+      <label><input type="radio" name="q3" value"Леонид Асгард"> Леонид Асгард</label>
+    </div>
+
     <button type="button" onclick="checkAnswers()">Сюж</button>
   </form>
 
@@ -47,7 +55,8 @@
     function checkAnswers() {
       const answers = {
         q1: "Новобург",
-        q2: "Сикэлостан"
+        q2: "Сикэлостан",
+        q3: "Леонид Асгард"
       };
 
       let score = 0;
