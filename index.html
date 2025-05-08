@@ -20,7 +20,7 @@
 <body>
 
   <h1>Кўиз авүт Попистанэ</h1>
-
+  
   <form id="quiz-form">
     <div class="question">
       <p>1. Что столица Попистани¿</p>
@@ -61,7 +61,15 @@
       <label><input type="radio" name="q5" value="Ԙрха"> Ԙрха</label><br>
       <label><input type="radio" name="q5" value="Фиктивная оток"> Фиктивная оток</label>
     </div>
-    
+
+    <div class="question">
+      <p>6. Что офицялныная мёна Попистани¿</p>
+      <label><input type="radio" name="q6" value="Жэчпосполита Попистан" Жэчпосполита Попистан</label><br>
+      <label><input type="radio" name="q6" value="Попистан" Попистан</label><br>
+      <label><input type="radio" name="q6" value="Попийская Жэчпосполита" Попийская Жэчпосполита</label><br>
+      <label><input type="radio" name="q6" value="Жэчпосполита Фэдэративная Попистан" Жэчпосполита Фэдэративная Попистан</label><br>
+    </div>
+        
     <button type="button" onclick="checkAnswers()">Сюж</button>
   </form>
 
@@ -74,7 +82,8 @@
         q2: "Сикэлостан",
         q3: "Леонид Асгард",
         q4: "ДӇР",
-        q5: "Културный союз"
+        q5: "Културный союз",
+        q6: "Жэчпосполита Фэдэративная Попистан"
       };
 
       let score = 0;
