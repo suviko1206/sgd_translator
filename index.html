@@ -1,1 +1,64 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Quiz</h1>
+
+  <form id="quiz-form">
+    <div class="question">
+      <p>1. What is the capital of France?</p>
+      <label><input type="radio" name="q1" value="Paris"> Paris</label><br>
+      <label><input type="radio" name="q1" value="Berlin"> Berlin</label><br>
+      <label><input type="radio" name="q1" value="Rome"> Rome</label>
+    </div>
+
+    <div class="question">
+      <p>2. Which planet is known as the Red Planet?</p>
+      <label><input type="radio" name="q2" value="Mars"> Mars</label><br>
+      <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label><br>
+      <label><input type="radio" name="q2" value="Venus"> Venus</label>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: "Paris",
+        q2: "Mars"
+      };
+
+      let score = 0;
+      for (const [key, value] of Object.entries(answers)) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === value) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").textContent = `You scored ${score} out of ${Object.keys(answers).length}.`;
+    }
+  </script>
+
+</body>
+</html>
